@@ -19,9 +19,12 @@ function App() {
       </AppBar>
       <BrowserRouter>
           <Switch>
-              <Route exact path='/' component={Semester} />
+              <Route exact path ='/'>
+                  <AddStudentButton />
+                  <Semester />
+              </Route>
               <Route path='/schedule' component={SchedList} />
-              <Route path='/student' component={AddStudent} />
+              <Route path='/addStudent' component={AddStudentPage} />
           </Switch>
       </BrowserRouter>
     </div>
